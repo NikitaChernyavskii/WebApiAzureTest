@@ -10,6 +10,7 @@ namespace AzureWebTestApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -20,8 +21,10 @@ namespace AzureWebTestApi
             }
 
             app.UseRouting();
-
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(o => o.SwaggerEndpoint("/swagger/v1/swagger.json", "API swagger"));
         }
     }
 }
