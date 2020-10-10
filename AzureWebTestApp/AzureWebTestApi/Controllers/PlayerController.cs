@@ -24,7 +24,7 @@ namespace AzureWebTestApi.Controllers
             return players;
         }
 
-        [HttpGet("delete-me")]
+        [HttpGet("deleteme")]
         public List<Player> DELETE_ME()
         {
             var players = _azureWebTestAppTantiDbContext.Players.ToList();
