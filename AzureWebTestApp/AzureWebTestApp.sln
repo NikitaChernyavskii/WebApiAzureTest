@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureWebTestApi", "AzureWebTestApi\AzureWebTestApi.csproj", "{6BC15B5C-C7D4-4BCE-AABF-A4DFD6D29436}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureWebTestDb", "AzureWebTestDb\AzureWebTestDb.csproj", "{69FED1D8-E2D8-4D35-848C-EC4E19E8F423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureWebTestDb", "AzureWebTestDb\AzureWebTestDb.csproj", "{69FED1D8-E2D8-4D35-848C-EC4E19E8F423}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External files", "External files", "{57A7F267-9DCE-4D5C-A17D-F9A059E93965}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\develop_azurewebtestapptanti.yml = ..\.github\workflows\develop_azurewebtestapptanti.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
